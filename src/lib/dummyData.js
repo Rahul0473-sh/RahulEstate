@@ -89,7 +89,7 @@ export const listData = [
   },
 ];
 
-export const singlePostData = {
+export const  singlePostData = {
   id: 1,
   title: "Beautiful Apartment",
   price: 1200,
