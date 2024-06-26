@@ -82,6 +82,28 @@
         }
 
         }
+        .profile{
+            padding: 12px,24px;
+            background-color: #fece51;
+            cursor: pointer;
+            position: relative;
+            cursor: pointer;
+            border: none;
+
+            .notification{
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background-color: red;
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
         .register {
         background-color: #fece51;
