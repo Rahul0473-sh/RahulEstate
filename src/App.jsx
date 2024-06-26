@@ -6,30 +6,35 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/routes/Layout/Layout.jsx'
 import ListPage from './components/routes/Listpage/ListPage.jsx'
 import SinglePage from './components/routes/singlePage/SinglePage.jsx'
+import Profile from './components/routes/Profile/Profile.jsx'
 
 
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Layout />,
       children: [
         {
           path: "/",
-          element:<Homepage/>
+          element: <Homepage />,
         },
         {
           path: "/list",
-          element:<ListPage/>
+          element: <ListPage />,
         },
         {
           path: "/:id",
-          element:<SinglePage/>
+          element: <SinglePage />,
         },
-      ]
-    }
-  ])
+        {
+          path: "/profile",
+          element: <Profile/> 
+        },
+      ],
+    },
+  ]);
 
   return (
     <RouterProvider router={router}/>
