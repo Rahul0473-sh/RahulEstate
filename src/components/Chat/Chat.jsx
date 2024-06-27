@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import './chat.scss';
 
 function Chat() {
+  const [chat, setChat] = useState(true);
   return (
     <div className="chat">
-      <div className="messages">
+      <div className="messages" onClick={() => setChat(true)}>
+        <h1>Messages</h1>
         <div className="message">
           <img
             src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -75,9 +78,67 @@ function Chat() {
           />
           <span>Rahul Sharma</span>
           <p>Lorem ipsum dolor sit, amet... .</p>
-        </div>  
+        </div>
       </div>
-      <div className="chatBox"></div>
+     {chat &&  <div className="chatBox">
+        <div className="top">
+          <div className="user">
+            <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+            Rahul Sharma
+          </div>
+          <span onClick={()=>setChat(null)}>X</span>
+        </div>
+        <div className="center">
+          <div className="chatMessage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage own">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage own">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage own">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage own">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage own">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+          <div className="chatMessage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <span>1hr ago</span>
+          </div>
+        </div>
+        <div className="bottom">
+          <textarea></textarea>
+          <button>Send Message</button>
+        </div>
+      </div>}
     </div>
   );
 }

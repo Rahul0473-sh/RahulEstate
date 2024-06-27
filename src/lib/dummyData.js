@@ -24,7 +24,7 @@ export const listData = [
   {
     id: 3,
     title: "A New Apartment in the City!",
-    img: "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200701211455342954-b42d6a4a129211eb98430242ac110003.jpg ",
     bedroom: 1,
     bathroom: 1,
     price: 800,
@@ -89,13 +89,13 @@ export const listData = [
   },
 ];
 
-export const  singlePostData = {
+export const singlePostData = {
   id: 1,
   title: "Beautiful Apartment",
   price: 1200,
   images: [
-    "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://i.pinimg.com/originals/33/60/0d/33600d97b7a75b40b6533962c47b3532.jpg",
+    "https://media.designcafe.com/wp-content/uploads/2021/06/23151350/south-indian-apartment-interior-design-for-dining-room-in-mumbai.jpg",
     "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "https://images.pexels.com/photos/2467285/pexels-photo-2467285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   ],

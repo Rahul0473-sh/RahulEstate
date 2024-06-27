@@ -18,30 +18,31 @@ function Profile() {
                 src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt=""
               />
-              
             </span>
-            
+
             <span>
-                UserName: <b>Rahul</b>
+              UserName: <b>Rahul</b>
             </span>
-            
+
             <span>
-                Email:<b>rs3253900@gmail.com</b>
+              Email:<b>rs3253900@gmail.com</b>
             </span>
           </div>
           <div className="title">
             <h1>My List</h1>
             <button>Create New Post</button>
           </div>
-          <List/>
+          <List />
           <div className="title">
             <h1>Save List</h1>
           </div>
-          <List/>
+          <List />
         </div>
       </div>
       <div className="chatContainer">
-        <Chat/> 
+        <div className="wrapper">
+          <Chat />
+        </div>
       </div>
     </div>
   );

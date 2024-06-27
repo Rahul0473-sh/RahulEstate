@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import "./layout.scss"
-import { Navbar } from './components/Navbar/Navbar.jsx'
+
 import Homepage from './components/routes/Hompage/Homepage.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/routes/Layout/Layout.jsx'
